@@ -110,10 +110,10 @@ public class HummingBirdAgent : Agent {  // 使用ml-agent 需要繼承Agent
         else if (Input.GetKey(KeyCode.D)) left = transform.right;
 
         if (Input.GetKey(KeyCode.E)) up = -transform.up;
-        else if (Input.GetKey(KeyCode.Q)) up = -transform.up;
+        else if (Input.GetKey(KeyCode.Q)) up = transform.up;
 
-        if (Input.GetKey(KeyCode.UpArrow)) pitch = 1f;
-        else if (Input.GetKey(KeyCode.DownArrow)) pitch = -1f;
+        if (Input.GetKey(KeyCode.DownArrow)) pitch = 1f;
+        else if (Input.GetKey(KeyCode.UpArrow)) pitch = -1f;
 
         if (Input.GetKey(KeyCode.LeftArrow)) yaw = -1f;
         else if (Input.GetKey(KeyCode.RightArrow)) yaw = 1f;
